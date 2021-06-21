@@ -1,19 +1,17 @@
+#include <stdlib.h>
 #include <stdio.h>
 #include <time.h>
-#include <stdio.h>
 /**
  * main - main funtion
  * Descrption: use conditional
  * Return: void
 */
-
 int main(void)
 {
 	int n;
 
-	scrand(time(0));
+	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-
 	printf("Last digit of %i and %i and is ", n, (n % 10));
 	if ((n % 10) == 0)
 	{
@@ -26,6 +24,6 @@ int main(void)
 	else
 	{
 		printf("less than 6 and not 0\n");
-	}
+	
 	return (0);
 }
