@@ -15,7 +15,7 @@ int main(void)
 	{
 		for (twod = (threed + 1); twod <= '9'; twod++)
 		{
-			for (one = (twod + 1); oned <= '9'; oned++) /*ones*/
+			for (oned = (twod + 1); oned <= '9'; oned++)
 			{
 				putchar(threed);
 				putchar(twod);
