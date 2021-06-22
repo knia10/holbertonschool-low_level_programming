@@ -11,7 +11,7 @@ int main(void)
 	char lc = 'a';
 	char cl = 'A';
 
-	while (lc <= 'z') 
+	while (lc <= 'z')
 	{
 		putchar(lc);
 		lc++;
