@@ -9,7 +9,7 @@ int main(void)
 {
 	char abc = 'a';
 
-	while (alpha <= 'z')
+	while (abc <= 'z')
 	{
 		putchar(abc);
 		abc++;
