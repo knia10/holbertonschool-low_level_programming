@@ -13,7 +13,7 @@ int main(void)
 
 	for (threed = '0'; threed <= '9'; threed++)
 	{
-		for (twod = (threed + 1); twod <= '9'; two++)
+		for (twod = (threed + 1); twod <= '9'; twod++)
 		{
 			for (one = (twod + 1); oned <= '9'; oned++) /*ones*/
 			{
