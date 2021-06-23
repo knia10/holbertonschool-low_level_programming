@@ -2,8 +2,8 @@
 
 /**
  * add - Write a function that adds two integers and returns the result
- * @a: one argument
- * @b: two arguments
+ * @num1: one argument
+ * @num2: two arguments
  * Return: add of both of them arguments
  */
 
