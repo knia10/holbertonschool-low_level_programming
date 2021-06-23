@@ -37,3 +37,10 @@ int _isalpha(int c);
  */
 
 int print_sign(int n);
+
+/**
+ * _abs - computer absolute value of integer
+ */
+
+int _abs(int);
+
