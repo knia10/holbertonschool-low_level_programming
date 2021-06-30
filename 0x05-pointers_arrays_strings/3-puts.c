@@ -1,4 +1,4 @@
-#include "Holberton.h"
+#include "holberton.h"
 /**
  *_puts - function that prints a string.
  *Description: use loop and pointer.
