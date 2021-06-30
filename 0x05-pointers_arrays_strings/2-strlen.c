@@ -13,6 +13,6 @@ int i;
 for (i = 0; *s != '\0'; i++)
 {
 s++;
-return (i);
 }
+return (i);
 }
