@@ -2,7 +2,7 @@
 /**
  *rev_string -  function reverse a string.
  *Description: use loop.
- *@S: variable to check.
+ *@s: pointer.
  *Return: return a char.
  */
 
