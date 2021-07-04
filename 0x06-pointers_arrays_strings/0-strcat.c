@@ -9,25 +9,20 @@
 char *_strcat(char *dest, char *src)
 {
 
-	char aux[700];
 	int i = 0;
 	int j = 0;
 
 	while (dest[i] != '\0')
 	{
-		aux[j] = dest[i];
 		i++;
-		j++;
 	}
-	i = 0;
 
-	while (src[i] != '\0')
+	while (src[j] != '\0')
 	{
-		aux[j] = src[i];
+		dest[i] = src[j];
 		i++;
 		j++;
 	}
-	aux[j] = '\0';
-	printf("\nConcatenated string: %s", aux);
+	dest[i] = '\0';
 	return (dest);
 }
