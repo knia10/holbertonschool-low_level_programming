@@ -1,9 +1,9 @@
 #include "holberton.h"
 /**
- * *_strcat - function that concatenates two strings.
+ * *_strncat - function that concatenates two strings.
  *@dest: string containing other aggravated strings.
  *@src: string to copy to dest.
- *@aux: array copy.
+ *@n: intering cont.
  *Return: attached strings
  */
 
@@ -16,12 +16,11 @@ char *_strncat(char *dest, char *src, int n)
 	{
 		i++;
 	}
-	
 	while (src[j] != src[n])
 	{
 		dest[i] = src[j];
 		i++;
-		j++;   
+		j++;
 	}
 	dest[i] = '\0';
 	return (dest);
