@@ -2,7 +2,7 @@
 
 /**
  * *_strncpy - function that copies a string.
- *@dest: string to copy. 
+ *@dest: string to copy.
  *@src: string copy of dest.
  *@n: number of string to copy.
  * Return: string.
