@@ -1,35 +1,30 @@
 #include <stdio.h>
 #include "dog.h"
+#include <stlib.h>
 /**
  *_strlen -  function that returns the length of a string.
- *Description: use loop.
- *@s: variable to check.
+ *@str: variable to check.
  *Return: return a char i.
  */
 int _strlen(char *s)
 {
 	int i;
 
-	for (i = 0; *s != '\0'; i++)
-	{
-		s++;
-	}
+	for (i = 0; *s != '\0'; i++);
 	return (i);
 }
 /**
- * *_strcpy - function that copies a string.
+ *strcpy - function that copies a string.
  *@dest: string to copy.
  *@src: string copy of dest.
  * Return: string.
  */
-char *_strcpy(char *dest, char *src)
+char *strcpy(char *dest, char *src)
 {
-	while (*src)
-	{
-		*dest = *src;
-		src++;
-		dest++;
-	}
+	int i;
+
+	for (i = 0; i<=len(src); i++)
+		dest[i] = src[i];
 	return (dest);
 }
 /**
@@ -61,7 +56,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 			free(copydog);
 			return (NULL);
 		}
-		copydog->name = _strcpy(copyname, name)
+		copydog->name = strcpy(copyname, name)
 	}
 	else
 		copydog->name = NULL;
@@ -75,7 +70,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 			free(copyname);
 			return (NULL);
 		}
-		copydog->owner = _strcpy(copyowner, owner)
+		copydog->owner = strcpy(copyowner, owner)
 	}
 	else
 		copydog->owner = NULL;
