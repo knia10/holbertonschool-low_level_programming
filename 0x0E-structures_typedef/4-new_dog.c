@@ -3,7 +3,7 @@
 #include <stdlib.h>
 /**
  *_strlen -  function that returns the length of a string.
- *@str: variable to check.
+ *@s: variable to check.
  *Return: return a char i.
  */
 int _strlen(char *s)
@@ -23,7 +23,7 @@ char *strcpy(char *dest, char *src)
 {
 	int i;
 
-	for (i = 0; i <= len(src); i++)
+	for (i = 0; i <= _strlen(src); i++)
 		dest[i] = src[i];
 	return (dest);
 }
@@ -56,7 +56,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 			free(copydog);
 			return (NULL);
 		}
-		copydog->name = strcpy(copyname, name)
+		copydog->name = strcpy(copyname, name);
 	}
 	else
 		copydog->name = NULL;
@@ -70,7 +70,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 			free(copyname);
 			return (NULL);
 		}
-		copydog->owner = strcpy(copyowner, owner)
+		copydog->owner = strcpy(copyowner, owner);
 	}
 	else
 		copydog->owner = NULL;
