@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "dog.h"
-#include <stlib.h>
+#include <stdlib.h>
 /**
  *_strlen -  function that returns the length of a string.
  *@str: variable to check.
@@ -23,7 +23,7 @@ char *strcpy(char *dest, char *src)
 {
 	int i;
 
-	for (i = 0; i<=len(src); i++)
+	for (i = 0; i <= len(src); i++)
 		dest[i] = src[i];
 	return (dest);
 }
