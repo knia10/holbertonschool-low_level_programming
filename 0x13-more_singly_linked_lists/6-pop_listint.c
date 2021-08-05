@@ -18,5 +18,7 @@ int pop_listint(listint_t **head)
 	temp = *head;
 	n_data = temp->n;/*guarda el dato para retornar*/
 	*head = temp->next;/*enlaza a head al nodo next*/
+	free(temp);
+	
 	return (n_data);
 }
