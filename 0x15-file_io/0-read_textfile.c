@@ -11,7 +11,6 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	int fd; /*file descriptor*/
 	ssize_t nl_read, nl_write;
 	char *buff;
-
 	if (filename == NULL)
 		return (0);
 
