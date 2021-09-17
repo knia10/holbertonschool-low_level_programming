@@ -19,7 +19,8 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 	{
 		p_new->n = n;
 	}
-	return (NULL);
+	else
+		return (NULL);
 
 	if (*head == NULL) /*cuenta la lista vacia*/
 	{
