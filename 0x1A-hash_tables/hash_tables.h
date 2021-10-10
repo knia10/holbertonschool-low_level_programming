@@ -1,5 +1,9 @@
 #ifndef __HASH_TABLE_H__
 #define __HASH_TABLE_H__
+
+#include <stdlib.h> /*for NULL*/
+#include <stdio.h> /* for printf*/
+
 /**
  * struct hash_node_s - Node of a hash table
  *
