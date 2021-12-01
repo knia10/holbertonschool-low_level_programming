@@ -7,14 +7,15 @@
 
 int main(void)
 {
-	char abc = 'a';
+	int abc = 97;
 
-	while (abc <= 'z')
+	while (abc <= 122)
 	{
 		putchar(abc);
+		printf("%d ", abc);
 		abc++;
 	}
-	putchar('\n');
+	/*putchar('\n');*/
 
 	return (0);
 }
