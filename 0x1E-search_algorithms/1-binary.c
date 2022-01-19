@@ -12,6 +12,7 @@
 int binary_search(int *array, size_t size, int value)
 {
 	size_t div = 0, left = 0, right = size - 1;
+	
 	if (array == 0 || array == NULL)
 	{
 		return (-1);
@@ -54,6 +55,9 @@ void array_div(int *array, size_t left, size_t right)
 		{
 			printf("%d\n", array[iter]);
 		}
-		printf("%d, ", array[iter]);
+		else
+		{
+			printf("%d, ", array[iter]);
+		}
 	}
 }
