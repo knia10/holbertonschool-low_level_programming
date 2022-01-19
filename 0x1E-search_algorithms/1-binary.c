@@ -12,7 +12,7 @@
 int binary_search(int *array, size_t size, int value)
 {
 	size_t div = 0, left = 0, right = size - 1;
-	
+
 	if (array == 0 || array == NULL)
 	{
 		return (-1);
@@ -39,6 +39,7 @@ int binary_search(int *array, size_t size, int value)
 
 /**
 * array_div - print split array
+* @array: is a pointer to the first element of the array
 * @left: left array
 * @right: right array
 */
